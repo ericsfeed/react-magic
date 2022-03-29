@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="about" element={<AboutPage />}></Route>
-          <Route path="public" element={<PublicPage />}></Route>
           <Route
             path="protected"
             element={
@@ -40,10 +39,6 @@ export const HomePage = () => {
 
 export const AboutPage = () => {
   return <div>This is the About page. </div>;
-};
-
-export const PublicPage = () => {
-  return <div>This page can be accessed by anyone</div>;
 };
 
 export const NotFoundPage = () => {

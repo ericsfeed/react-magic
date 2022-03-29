@@ -15,9 +15,6 @@ const Navigation = () => {
             <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <NavLink to="/public">Public Page</NavLink>
-          </li>
-          <li>
             <NavLink to="/protected">Protected Page</NavLink>
           </li>
         </ul>
