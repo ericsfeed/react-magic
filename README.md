@@ -95,7 +95,7 @@ The page uses trackAuth to maintain ui consistency as follows: when the user log
 
 #### PrivateElement explained
 
-This bit enforces authentication; if the user is authenticated, then navigate to the pagel; otherwise redirect them to the login page.  
+This bit enforces authentication; if the user is authenticated, then navigate to the page; otherwise redirect them to the login page.  
 
 ```
 const PrivateElement = ({ children }) => {
