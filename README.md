@@ -8,6 +8,63 @@ The original post implemented a good demonstration of react router.  I stripped 
 
 Some of the magic examples include styling libraries (bootstrap). This one intentionally uses vanilla html and css. The CSS that is there can be removed or modified etc. 
 
+
+### How do do this from scratch
+
+#### Grab the latest 
+
+```
+npx create-react-app react-magic
+cd react-magic
+npm install react-router-dom@6
+npm install --save magic-sdk
+
+```
+
+#### Update index.js for react router
+
+```
+import { BrowserRouter } from "react-router-dom";
+```
+
+Replace <App/> with the following: 
+```
+<BrowserRouter>
+      <App />
+</BrowserRouter>
+```
+
+#### Add the services files
+
+```
+cd src
+mkdir services
+touch services/magic.js
+touch services/trackAuth.js
+```
+After setting up the file structure, paste in the file contents for each from this project. 
+
+#### Add the components
+
+```
+cd src
+mkdir components
+touch components/Navigation.js
+touch components/LoginPage.js
+touch components/PrivateElement.js
+touch components/ProtectedPage.js
+```
+After setting up the file structure, paste in the file contents for each from this project. 
+
+#### replace the contents of App.js with the version from this project
+
+#### magic.js explained
+
+#### trackAuth.js explained
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
