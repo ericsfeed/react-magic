@@ -39,7 +39,7 @@ export const HomePage = () => {
 };
 
 export const AboutPage = () => {
-  return <div>This is the page where you put details about yourself</div>;
+  return <div>This is the About page. </div>;
 };
 
 export const PublicPage = () => {

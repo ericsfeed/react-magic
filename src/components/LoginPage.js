@@ -47,6 +47,7 @@ function LoginPage() {
 
   return (
     <div>
+      <p>This is the Login page. </p>
       <form onSubmit={handleSubmit}>
         <span>
           <fieldset>
