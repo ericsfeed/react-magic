@@ -1,4 +1,4 @@
-### What's Changed
+### Overview - Why this repo exists
 
 I could not find an example online that combined create-react-app, react router v6 with magic links (magic-sdk) for authentication, so here is one. 
 
@@ -8,10 +8,11 @@ The original post implemented a good demonstration of react router.  I stripped 
 
 Some of the magic examples include styling libraries (bootstrap). This one intentionally uses vanilla html and css. The CSS that is there can be removed or modified etc. 
 
+---
 
-### How do do this from scratch
+### How to recreate this from scratch
 
-#### Grab the latest 
+#### Grab the latest CRA, react router, and magic links
 
 ```
 npx create-react-app react-magic
@@ -27,7 +28,13 @@ npm install --save magic-sdk
 import { BrowserRouter } from "react-router-dom";
 ```
 
-Replace <App/> with the following: 
+Replace 
+
+```
+<App/> 
+```
+
+with the following: 
 ```
 <BrowserRouter>
       <App />
@@ -42,7 +49,7 @@ mkdir services
 touch services/magic.js
 touch services/trackAuth.js
 ```
-After setting up the file structure, paste in the file contents for each from this project. 
+After setting up the file structure, paste in the file contents from this project. 
 
 #### Add the components
 
@@ -54,16 +61,30 @@ touch components/LoginPage.js
 touch components/PrivateElement.js
 touch components/ProtectedPage.js
 ```
-After setting up the file structure, paste in the file contents for each from this project. 
+After setting up the file structure, paste in the file contents from this project. 
 
-#### replace the contents of App.js with the version from this project
+#### Navigation.js
+
+This components implements the navigation link structure for this example. 
+
+#### App.js explained
+
+Replace the contents of App.js with the version from this project. 
+
+This file implements the router and some very simple pages. 
+
 
 #### magic.js explained
 
+The function magicLoginCallback integrates the magic link login. 
+
+The function magicCheckUser invokes the magic service to check login status. 
+
 #### trackAuth.js explained
 
+'trackAuth' is used to keep track of whether the user is logged in or not. This  mirrors the underlying login state implemented by the magic link system.  
 
-
+---
 
 # Getting Started with Create React App
 

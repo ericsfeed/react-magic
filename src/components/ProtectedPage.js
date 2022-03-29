@@ -7,8 +7,8 @@ const ProtectedPage = ({ x }) => {
   const navigate = useNavigate();
   return (
     <div>
-      <p>You are logged in. Welcome to the Protected page! 
-        The value of x is {x}</p>
+      <p>This is the Protected page. You are logged in.  </p>
+      <p>By the way, the value passed to this page at creation was: {x}</p>
       <button
         onClick={() => {
           trackAuth.logout(() =>
