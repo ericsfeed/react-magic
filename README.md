@@ -32,7 +32,7 @@ REACT_APP_PK_KEY=YOUR_MAGIC_LINK_KEY_GOES_HERE
 control-D
 ```
 
-Be sure to replace the key with your own.  
+Be sure to replace YOUR_MAGIC_LINK_KEY_GOES_HERE with your own key!  
 
 
 #### Update index.js for react router
