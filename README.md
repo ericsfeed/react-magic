@@ -22,6 +22,15 @@ npm install --save magic-sdk
 
 ```
 
+#### Create a .env file for the magic link 
+
+```
+cat > .env
+REACT_APP_PK_KEY=YOUR_MAGIC_LINK_KEY_GOES_HERE
+control-D
+```
+
+
 #### Update index.js for react router
 
 ```
