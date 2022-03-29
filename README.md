@@ -12,6 +12,8 @@ Some of the magic examples include styling libraries such as Bootstrap. This one
 
 ### How to recreate this from scratch
 
+This assumes you have a magic link account. See https://magic.link/ for that. 
+
 #### Grab the latest CRA, react router, and magic links
 
 ```
@@ -29,6 +31,8 @@ cat > .env
 REACT_APP_PK_KEY=YOUR_MAGIC_LINK_KEY_GOES_HERE
 control-D
 ```
+
+Be sure to replace the key with your own.  
 
 
 #### Update index.js for react router
