@@ -1,5 +1,6 @@
 ### Overview - Why this repo exists
 
+
 I could not find an example online that combined create-react-app, and react router v6 with magic links (magic-sdk) for authentication, so here is one. 
 
 This code is adapted from another post here: https://www.codingdeft.com/posts/react-router-tutorial/
@@ -7,6 +8,11 @@ This code is adapted from another post here: https://www.codingdeft.com/posts/re
 The original post contains a helpful demonstration of react router V6.  Using that as an inspiration, I excluded all the bits that are unrelated to authentication and I added code that takes advantage of magic-sdk. 
 
 Some of the magic examples include styling libraries such as Bootstrap. This one intentionally uses vanilla html and css. The CSS that is included can easily be removed or modified etc. 
+
+---
+### How to demo
+
+https://react-magic-rnuxwlzad-ericsfeed.vercel.app/
 
 ---
 
