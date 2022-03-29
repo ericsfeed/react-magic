@@ -12,7 +12,7 @@ Some of the magic examples include styling libraries such as Bootstrap. This one
 ---
 ### How to demo
 
-https://react-magic-rnuxwlzad-ericsfeed.vercel.app/
+https://react-magic.vercel.app/
 
 ---
 
