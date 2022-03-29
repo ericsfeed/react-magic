@@ -6,7 +6,7 @@ This code is adapted from another post here: https://www.codingdeft.com/posts/re
 
 The original post implemented a good demonstration of react router.  I stripped out all the bits that are unrelated to authentication and I added code that takes advantage of magic.link for authentication. 
 
-Some of the magic examples include styling libraries (bootstrap). This one intentionally uses vanilla html and css. The CSS that is there can be removed or modified etc. 
+Some of the magic examples include styling libraries such as Bootstrap. This one intentionally uses vanilla html and css. The CSS that is there can be removed or modified etc. 
 
 ---
 
@@ -63,16 +63,11 @@ touch components/ProtectedPage.js
 ```
 After setting up the file structure, paste in the file contents from this project. 
 
-#### Navigation.js
-
-This components implements the navigation link structure for this example. 
-
 #### App.js explained
 
 Replace the contents of App.js with the version from this project. 
 
 This file implements the router and some very simple pages. 
-
 
 #### magic.js explained
 
@@ -83,6 +78,42 @@ The function magicCheckUser invokes the magic service to check login status.
 #### trackAuth.js explained
 
 'trackAuth' is used to keep track of whether the user is logged in or not. This  mirrors the underlying login state implemented by the magic link system.  
+
+#### ProtectedPage explained
+
+Illustrates a page that is behind the login barrier.  
+
+The page uses trackAuth to maintain ui consistency as follows: when the user logs out, navigate to the LoginPage. 
+
+```
+        onClick={() => {
+          trackAuth.logout(() =>
+            navigate("/login", { state: { from: { pathname: "/protected" } } })
+          );
+        }}
+```
+
+#### PrivateElement explained
+
+This bit enforces authentication; if the user is authenticated, then navigate to the pagel; otherwise redirect them to the login page.  
+
+```
+const PrivateElement = ({ children }) => {
+  let location = useLocation();  
+  return trackAuth.isAuthenticated ? (
+    children
+  ) : (
+    <Navigate to="/login" state={{ from: location }} />
+  );
+};
+```
+
+#### Navigation.js explained
+
+This components implements the navigation link structure for this example. 
+
+
+That's all folks! 
 
 ---
 
