@@ -1,6 +1,6 @@
 ### Overview - Why this repo exists
 
-I could not find an example online that combined create-react-app, react router v6 with magic links (magic-sdk) for authentication, so here is one. 
+I could not find an example online that combined create-react-app, and react router v6 with magic links (magic-sdk) for authentication, so here is one. 
 
 This code is adapted from another post here: https://www.codingdeft.com/posts/react-router-tutorial/
 
