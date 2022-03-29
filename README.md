@@ -4,9 +4,9 @@ I could not find an example online that combined create-react-app, and react rou
 
 This code is adapted from another post here: https://www.codingdeft.com/posts/react-router-tutorial/
 
-The original post implemented a good demonstration of react router.  I stripped out all the bits that are unrelated to authentication and I added code that takes advantage of magic.link for authentication. 
+The original post contains a helpful demonstration of react router V6.  Using that as an inspiration, I excluded all the bits that are unrelated to authentication and I added code that takes advantage of magic-sdk. 
 
-Some of the magic examples include styling libraries such as Bootstrap. This one intentionally uses vanilla html and css. The CSS that is there can be removed or modified etc. 
+Some of the magic examples include styling libraries such as Bootstrap. This one intentionally uses vanilla html and css. The CSS that is included can easily be removed or modified etc. 
 
 ---
 
@@ -124,6 +124,8 @@ const PrivateElement = ({ children }) => {
 #### Navigation.js explained
 
 This components implements the navigation link structure for this example. 
+
+This example demonstrates how these three resources (create react app, react router v6, and magic link) can co-exist.  Depending on details TBD, further changes may be required to properly secure your own application. 
 
 
 That's all folks! 
