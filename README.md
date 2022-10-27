@@ -32,6 +32,8 @@ npm install --save magic-sdk
 
 #### Create a .env file for the magic link 
 
+If you are using Vercel, you can add the key into the environment variables for the project.  Otherwise...
+
 ```
 cat > .env
 REACT_APP_PK_KEY=YOUR_MAGIC_LINK_KEY_GOES_HERE
